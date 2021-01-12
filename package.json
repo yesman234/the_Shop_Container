@@ -1,0 +1,23 @@
+{
+  "name": "the_shop_container",
+  "proxy": "http://127.0.0.1:5000",
+  "version": "1.0.0",
+  "description": "Container to start-up program",
+  "main": "index.js",
+  "scripts": {
+    "start": "node the_shop--Backend/server",
+    "server": "node the_shop--Backend/server",
+    "the_Shop": "npm start --prefix the_Shop",
+    "dev": "concurrently \"npm run server\" \"npm run the_Shop\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yesman234/the_Shop_Container.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "install": "^0.13.0"
+  }
+}
