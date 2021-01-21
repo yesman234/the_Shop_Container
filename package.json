@@ -1,6 +1,5 @@
 {
   "name": "the_shop_container",
-  "proxy": "http://127.0.0.1:5000",
   "version": "1.0.0",
   "description": "Container to start-up program",
   "main": "index.js",
@@ -8,7 +7,9 @@
     "start": "node the_shop--Backend/server",
     "server": "node the_shop--Backend/server",
     "the_Shop": "npm start --prefix the_Shop",
-    "dev": "concurrently \"npm run server\" \"npm run the_Shop\""
+    "dev": "concurrently \"npm run server\" \"npm run the_Shop\"",
+    "type": "module",
+    "@std/esm": "cjs"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
     "install": "^0.13.0"
   }
 }
